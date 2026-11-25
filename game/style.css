@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #0d1830; }
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+main { text-align: center; padding: 12px; }
+canvas {
+  width: min(1440px, 98vw);
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  background: #0d1830;
+}
+.foot {
+  color: rgba(255, 233, 184, 0.7);
+  font-size: 13px;
+  margin: 10px 0 0;
+}
