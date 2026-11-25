@@ -6,6 +6,10 @@
 // /output/dossier.json, the summary the judge reads, with the vendored
 // make.fun library.
 //
+// The screenshots are real renders of this game's own code: open
+// game/index.html in desktop Chrome with ?shot=hero|cook|served|rush and
+// capture 1440x900. The first screenshot by name is the cover.
+//
 // Serve it locally, then open http://localhost:8080.
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
