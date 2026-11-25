@@ -620,7 +620,7 @@ function drawBay(ctx, game, t) {
   } else if (showId) {
     const r = { kari: ['rice', 'broccoli', 'tomato', 'curry'], tomat: ['rice', 'tomato', 'cheese', 'sesame'], zamrud: ['rice', 'broccoli', 'cheese', 'curry'] }[showId];
     drawPlanet(ctx, lampX, y + 128, 62, r);
-    text(ctx, 'Planet terakhir terkirim ✓', lampX, y + 208, 13, '#ffe9b8', 400);
+    if (!game.hideBayCaption) text(ctx, 'Planet terakhir terkirim ✓', lampX, y + 208, 13, '#ffe9b8', 400);
   } else {
     ellipse(ctx, lampX, y + 128, 70, 26);
     ctx.fillStyle = 'rgba(255,255,255,0.08)';

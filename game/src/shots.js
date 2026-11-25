@@ -70,6 +70,7 @@ export function applyShot(game, name) {
     setOrders(game, [['zamrud', 58], ['tomat', 44], ['kari', 66]]);
     game.plate = ['rice', 'broccoli', 'tomato']; // one plate still unfinished
     game.hand = null;
+    game.hideBayCaption = true; // the floater below is the caption here
     game.floaters.push({
       x: LAYOUT.bay.x + 185, y: LAYOUT.bay.y + 205,
       text: 'PERFECT PLANET · +240', color: '#ffd23e', life: 999,
@@ -84,6 +85,7 @@ export function applyShot(game, name) {
     setOrders(game, [['kari', 12], ['tomat', 45]]);
     game.plate = ['rice', 'broccoli', 'tomato']; // one pour away from done
     game.hand = 'curry';
+    game.hideBayCaption = true; // the floater below is the caption here
     // golden sauce pouring in an arc toward the plate
     arcParticles(game, 720, 480, 150, 60, '#f5a623', 12, 30);
     game.floaters.push({
